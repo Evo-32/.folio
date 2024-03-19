@@ -13,6 +13,12 @@
     animation: typing 2s steps(15, end);
 }
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+
 body {
     background-image: url(./image/pexels-paulina-danielle-14345000.jpg);
     background-size: cover;
