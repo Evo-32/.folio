@@ -82,9 +82,18 @@ function smoothScroll(target) {
   
 
   document.addEventListener('DOMContentLoaded', function() {
+    var welcomeOverlay = document.getElementById('welcomeOverlay');
     var welcomeMessage = document.getElementById('welcomeMessage');
-    welcomeMessage.style.display = 'block';
+
+    // Show the overlay and welcome message
+    welcomeOverlay.style.opacity = '1';
+    welcomeOverlay.style.pointerEvents = 'auto'; // Enable clicks
+    welcomeMessage.style.opacity = '1';
+
+    // Hide the welcome message after 3 seconds
     setTimeout(function() {
-      welcomeMessage.style.display = 'none';
+      welcomeOverlay.style.opacity = '0';
+      welcomeOverlay.style.pointerEvents = 'none'; // Disable clicks
+      welcomeMessage.style.opacity = '0';
     }, 3000); // 3 seconds
   });
