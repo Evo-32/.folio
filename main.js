@@ -98,6 +98,7 @@ function smoothScroll(target) {
     }, 3000); // 3 seconds
   });
 
-  document.querySelector('.nav-toggle').addEventListener('click', function() {
-    this.classList.toggle('active');
+  
+  document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('mobileNav').classList.toggle('hidden');
   });

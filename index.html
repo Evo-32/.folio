@@ -19,17 +19,31 @@
 
     <div class="main-content">
             
-        <div id="bar" class="aside bg-gray-800 text-white flex items-center justify-between p-4 fixed top-0 left-0 w-full z-10">
-            <div class="logo text-2xl font-semibold"><a href="#"><span>E</span>vodie</a></div>
-            <ul class="nav flex">
-                <li><a href="#home" class="active flex items-center py-2 px-4"><i class="fas fa-home mr-2"></i>Home</a></li>
-                <li><a href="#about" class="active flex items-center py-2 px-4"><i class="fas fa-user mr-2"></i>About and skills</a></li>
-                <li><a href="#edu" class="active flex items-center py-2 px-4"><i class="fas fa-list mr-2"></i>Edu.Background</a></li>
-                <li><a href="#project" class="active flex items-center py-2 px-4"><i class="fas fa-briefcase mr-2"></i>Projects</a></li>
-                <li><a href="#contact" class="active flex items-center py-2 px-4"><i class="fas fa-comments mr-2"></i>Contacts</a></li>
-            </ul>
-            <div class="nav-toggle p-4"><span></span></div>
-          </div>
+        
+<div id="bar" class="aside bg-gray-800 text-white flex items-center justify-between p-4 fixed top-0 left-0 w-full z-10">
+    <div class="logo text-2xl font-semibold"><a href="#"><span>E</span>vodie</a></div>
+    <ul class="nav hidden md:flex">
+        <li><a href="#home" class="active flex items-center py-2 px-4"><i class="fas fa-home mr-2"></i>Home</a></li>
+        <li><a href="#about" class="active flex items-center py-2 px-4"><i class="fas fa-user mr-2"></i>About and skills</a></li>
+        <li><a href="#edu" class="active flex items-center py-2 px-4"><i class="fas fa-list mr-2"></i>Edu.Background</a></li>
+        <li><a href="#project" class="active flex items-center py-2 px-4"><i class="fas fa-briefcase mr-2"></i>Projects</a></li>
+        <li><a href="#contact" class="active flex items-center py-2 px-4"><i class="fas fa-comments mr-2"></i>Contacts</a></li>
+    </ul>
+    <div class="md:hidden">
+      <button id="menuToggle" class="text-white focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+  
+  <ul id="mobileNav" class="md:hidden absolute bg-gray-800 w-full text-white top-16 left-0 hidden">
+    <li><a href="#home" class="block py-2 px-4"><i class="fas fa-home mr-2"></i>Home</a></li>
+    <li><a href="#about" class="block py-2 px-4"><i class="fas fa-user mr-2"></i>About and skills</a></li>
+    <li><a href="#edu" class="block py-2 px-4"><i class="fas fa-list mr-2"></i>Edu.Background</a></li>
+    <li><a href="#project" class="block py-2 px-4"><i class="fas fa-briefcase mr-2"></i>Projects</a></li>
+    <li><a href="#contact" class="block py-2 px-4"><i class="fas fa-comments mr-2"></i>Contacts</a></li>
+  </ul>
+  
         
         <section id="home" class="home section bg-white py-16">
           <div class="container mx-auto px-4 flex flex-col items-center justify-center">
