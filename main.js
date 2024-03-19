@@ -97,3 +97,7 @@ function smoothScroll(target) {
       welcomeMessage.style.opacity = '0';
     }, 3000); // 3 seconds
   });
+
+  document.querySelector('.nav-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
