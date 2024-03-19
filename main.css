@@ -24,9 +24,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #3498db; /* Background color changed to blue */
     color: white;
-    padding: 20px;
+    padding: 30px; /* Increased padding */
     border-radius: 10px;
     display: none;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold; /* Added font weight */
   }
