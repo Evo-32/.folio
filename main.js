@@ -80,3 +80,11 @@ function smoothScroll(target) {
     });
   });
   
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var welcomeMessage = document.getElementById('welcomeMessage');
+    welcomeMessage.style.display = 'block';
+    setTimeout(function() {
+      welcomeMessage.style.display = 'none';
+    }, 3000); // 3 seconds
+  });
