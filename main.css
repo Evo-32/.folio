@@ -45,12 +45,3 @@
     opacity: 0; /* Initially hidden */
     transition: opacity 0.5s; /* Smooth fade-in transition */
   }
-
-*{
-  margin: 0;
-  padding: 0;
-/* URL of your background image */
-  background-size: cover;
-  background-position: center;
-  font-weight: 900;
-  }
